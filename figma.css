@@ -1,0 +1,13 @@
+body {
+  background: black
+}
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+nav,
+table {
+  color: white;
+}

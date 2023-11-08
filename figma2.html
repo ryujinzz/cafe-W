@@ -10,46 +10,61 @@
 
 <body>
   <header>
-    <ul>
-      <li class="Sign In">
-        <p>Sign In</p>
-      </li>
-      <li class="Sign Up">
-        <p>Sign Up</p>
-      </li>
-      <li class="logo"><a href="#main page"><img src="./Cafe W.svg" alt="왕관 이미지 cafe W" /></a></li>
-      <li>class="logo-text"><p>cafe <b>W</b></p>
-      </li>
-      <li class="search"><img src="./search - normal (Dark).svg" alt="검색 돋보기 이미지" /></li>
-    </ul>
+    <div class="top">
+      <ul class="sign-in">
+        <li><a href="/">Sign In</a></li>
+        <li><a href="/">Sign Up</a></li>
+      </ul>
+      <div class="cafe-main1">
+        <a href="#">
+          <img src="/CafeW.svg" alt="왕관 모양 cafe W" />
+          <span>CAFE <b>W</b></span>
+        </a>
+      </div>
+      <div class="search">
+        <button class="btn" type="button">
+          <img src="./Search.svg" alt="돋보기" />
+        </button>
+        <input type="search" />
+      </div>
+    </div>
+
 
     <nav class="main-menu">
-      <table>
-        <tr>
-          <th scope="col">Drinks</th>
-          <th scope="col">Foods</th>
-          <th scope="col">Products</th>
-          <th scope="col">Lectures</th>
-        </tr>
-        <tr>
-          <td>콜드 브루</td>
-          <td>베이커리</td>
-          <td>머그</td>
-          <td>UI 구조 & 디자인</td>
-        </tr>
-        <tr>
-          <td>에스프레소</td>
-          <td>케잌</td>
-          <td>텀블러</td>
-          <td>UI 인터렉션 주니어</td>
-        </tr>
-        <tr>
-          <td>기타 제조 음료</td>
-          <td>샌드위치 & 샐러드</td>
-          <td>커피용품</td>
-          <td>리액트 프로그래밍</td>
-        </tr>
-      </table>
+
+      <ul class="menu">
+        <li>
+          <div><b>Drinks</b></div>
+          <div>콜드 브루</div>
+          <div>에스프레소</div>
+          <div>기타 제조 음료</div>
+        </li>
+        <li>
+          <div><b>Foods</b></div>
+          <div>베이커리</div>
+          <div>케잌</div>
+          <div>샌드위치 & 음료</div>
+        </li>
+        <li>
+          <div><b>Products</b></div>
+          <div>머그</div>
+          <div>텀블러</div>
+          <div>커피용품</div>
+        </li>
+        <li>
+          <div><b>Lectures</b></div>
+          <div>UI 구조 디자인</div>
+          <div>인터렉션 주니어</div>
+          <div>리엑트 프로그래밍</div>
+        </li>
+        <li>
+          <div><b>Members</b></div>
+          <div>공지사항</div>
+          <div>추천 채널</div>
+          <div>체크 리스트</div>
+        </li>
+      </ul>
+
     </nav>
   </header>
 </body>

@@ -1,13 +1,90 @@
-body {
-  background: black
+:root {
+  --base-white: #fff;
 }
 
 body {
+  background: #282725;
+}
+
+header{
+  color: var(--base-white);
+}
+
+
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.top li:nth-child(3) {
+  background-color: aqua;
+
+  & .btn {
+    background: none;
+    border: none;
+  }
+}
+
+.btn img{
+  vertical-align: middle;
+}
+
+.sign-in a, .cafe-main1 span{
+  display: block;
+  padding-left: 10px;
+  text-decoration: none;
+  color: var(--base-white);
+
+}
+
+.sign-in{
+  display: flex;
+}
+
+ul{
+  list-style-type : none;
+  padding-left: 0px;
+}
+
+.search:hover{
+  width: auto;
+
+}
+
+input {
+  border: none;
+  background: #282725;
+  border: 1px solid #fff;
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid;
+  }
+}
+
+
+.cafe-main1 a {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: var(--base-white);
 }
 
-nav,
-table {
-  color: white;
+.menu {
+  display: flex;
+  justify-content: space-around;
+  
 }
+
+/* 그리드로 메뉴 배치하는 방법  
+.menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 16px;
+  text-align: center;
+} */

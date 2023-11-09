@@ -93,6 +93,7 @@ a{
   width: 50%;
   height: 50%;
   position: relative;
+  /* aspect-ratio: auto; */
 
 
 }
@@ -102,7 +103,7 @@ a{
   outline: 0;
   height: 300px;
   width: 210px;
-  aspect-ratio: auto;
+  /* object-fit: cover; */
   background-image: url(/latte.svg);
   background-repeat: no-repeat;
   background-position: -200px 0;
@@ -119,7 +120,8 @@ a{
   outline: 0;
   height: 300px;
   width: 210px;
-  aspect-ratio: auto;
+  
+  /* object-fit: cover; */
   background-image: url(/hands-coffee.svg);
   background-repeat: no-repeat;
   background-position: -180px 0;
@@ -135,7 +137,7 @@ a{
   outline: 0;
   height: 300px;
   width: 210px;
-  aspect-ratio: auto;
+  /* object-fit: cover; */
   background-repeat: no-repeat;
   background-image: url(/book.svg);
   background-position: -200px 0;

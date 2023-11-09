@@ -2,15 +2,12 @@
   --base-white: #fff;
 }
 
-body {
-  background: #282725;
-}
-
 header{
+  background: #282725;
   color: var(--base-white);
 }
 
-
+/* 로그인 부분 */
 
 .top{
   display: flex;
@@ -19,18 +16,11 @@ header{
   text-align: center;
   align-items: center;
   border-bottom: 1px solid #fff;
-}
-
-.top li:nth-child(3) {
-  background-color: aqua;
-
-  & .btn {
-    background: none;
-    border: none;
-  }
+  position: relative; /*  이게 있어야 정렬이 됩니다. */
 }
 
 .btn img{
+  background: #282725;
   vertical-align: middle;
 }
 
@@ -46,37 +36,108 @@ header{
   display: flex;
 }
 
+.cafe-main1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /* 부모를 기준으로 정가운데 정렬  */
+}
+
+
 ul{
   list-style-type : none;
   padding-left: 0px;
 }
 
-.search:hover{
-  width: auto;
-
-}
-
-input {
-  border: none;
-  background: #282725;
-  border: 1px solid #fff;
-  &:focus {
-    outline: none;
-    border-bottom: 1px solid;
-  }
-}
-
-
 .cafe-main1 a {
-  display: flex;
+display: flex;
   align-items: center;
   text-decoration: none;
   color: var(--base-white);
 }
 
+@keyframes sildEffect{
+  0% { 
+    
+  }
+  100% {
+    
+    transform: translate(150px,0);
+    transition-duration: 1.5s;
+    width: auto;
+  }
+}
+
+/* @keyframes fadeEffect{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+    transition-duration: 0.5s;
+    transition-delay: 1s;
+  }
+} */
+
+.search{
+  display:flex;
+}
+.btn-wrap{
+  position: relative;
+}
+
+.search input{
+  width: 0;
+  transition:all .5s;
+}
+
+
+.search button{
+  border:none;
+  background:none;
+}
+
+.search:hover input{
+  width: 142px;
+}
+.btn{
+  /* all:unset;
+  position:absolute;
+  left: -30px; */
+}
+
+/* .btn:hover{
+  cursor: pointer;
+  animation-name: slidEffect;
+  animation-fill-mode: forwards;
+} */
+
+input {
+  border: none;
+  background: #282725;
+  border-bottom: 1px solid var(--base-white);
+  /* background: violet; */
+}
+
+
+/* input:hover{
+  cursor: pointer;
+  animation-name: fadeEffect;
+  animation-fill-mode: forwards;
+} */
+
+
+
+
+
+/* nav 메뉴 부분 */
+
+
 .menu {
   display: flex;
   justify-content: space-around;
+  line-height: 1.5em;
   
 }
 
